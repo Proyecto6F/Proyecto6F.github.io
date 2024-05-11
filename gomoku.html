@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Gomoku</title>
+    <link rel="stylesheet" href="gomoku.css">
+</head>
+<body>
+    <div class="container">
+        <h1><center><strong>Simulador de Gomoku</strong></center></h1>
+
+       <center><div class="board" id="board"></div></center> 
+        <div class="data-container">
+           <center> <div>
+                <strong><label for="seed-input">Semilla inicial:</label></strong>
+                <input type="number" id="seed-input">
+                <button id="start-button">Iniciar Juego</button>
+            </div></center>
+            <br>
+           <center> <strong><div id="random-numbers"></div></strong></center>
+            <br>
+
+        <center><strong>    <div id="random-check"></div></strong></center>
+        <br>
+        </div>
+      <center>  <div id="winner-message"></div></center>
+        <center><button onclick="resetGame()">Reiniciar Juego</button></center>
+        <br>
+        <br>
+        <br>
+        <center><strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong></center>
+
+    </div>
+
+    <script src="gomoku.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Póker</title>
+    <link rel="stylesheet" href="poker.css">
+</head>
+
+<body>
+    <h1>Método Póker</h1>
+    <button id="generarNumeros">Generar Números</button>
+    <table id="tablaNumeros">
+        <!-- La tabla de números será generada dinámicamente con JavaScript -->
+    </table>
+    <h2>Categorías del Método Poker</h2>
+    <table id="tablaCategorias">
+        <tr>
+            <th>Categoría</th>
+            <th>Números Totales</th>
+            <th>Operación (Ei)</th>
+            <th>Resultado Operación</th>
+            <th>Resultado Final</th>
+            <th>Nivel de Aceptación (95%)</th>
+        </tr>
+        <tr>
+            <td>Todos Diferentes (TD)</td>
+            <td id="totalTD">0</td>
+            <td id="operacionTD">0</td>
+            <td id="resultadoTD">0</td>
+            <td id="resultadoFinalTD">0</td>
+            <td id="aceptacionTD">0</td>
+        </tr>
+        <tr>
+            <td>Exactamente 1 par (1P)</td>
+            <td id="total1P">0</td>
+            <td id="operacion1P">0</td>
+            <td id="resultado1P">0</td>
+            <td id="resultadoFinal1P">0</td>
+            <td id="aceptacion1P">0</td>
+        </tr>
+        <tr>
+            <td>2 Pares (2P)</td>
+            <td id="total2P">0</td>
+            <td id="operacion2P">0</td>
+            <td id="resultado2P">0</td>
+            <td id="resultadoFinal2P">0</td>
+            <td id="aceptacion2P">0</td>
+        </tr>
+        <tr>
+            <td>1 tercia y 1 par (TP)</td>
+            <td id="totalTP">0</td>
+            <td id="operacionTP">0</td>
+            <td id="resultadoTP">0</td>
+            <td id="resultadoFinalTP">0</td>
+            <td id="aceptacionTP">0</td>
+        </tr>
+        <tr>
+            <td>Tercia (T)</td>
+            <td id="totalT">0</td>
+            <td id="operacionT">0</td>
+            <td id="resultadoT">0</td>
+            <td id="resultadoFinalT">0</td>
+            <td id="aceptacionT">0</td>
+        </tr>
+        <tr>
+            <td>Póker (P)</td>
+            <td id="totalP">0</td>
+            <td id="operacionP">0</td>
+            <td id="resultadoP">0</td>
+            <td id="resultadoFinalP">0</td>
+            <td id="aceptacionP">0</td>
+        </tr>
+        <tr>
+            <td>Quintilla (Q)</td>
+            <td id="totalQ">0</td>
+            <td id="operacionQ">0</td>
+            <td id="resultadoQ">0</td>
+            <td id="resultadoFinalQ">0</td>
+            <td id="aceptacionQ">0</td>
+        </tr>
+    </table>
+
+    <!-- Tabla de Probabilidad -->
+    <table class="probabilidad-table">
+        <caption>Probabilidad para Números con 5 Decimales</caption>
+        <tr>
+            <th>Categoría</th>
+            <th>Probabilidad</th>
+            <th>Probabilidad (Ei)</th>
+        </tr>
+        <tr>
+            <td>Todos Diferentes (TD)</td>
+            <td id="probabilidadTD">0.30240</td>
+            <td>0.30240n</td>
+        </tr>
+        <tr>
+            <td>Exactamente 1 par (1P)</td>
+            <td id="probabilidad1P">0.50400</td>
+            <td>0.50400n</td>
+        </tr>
+        <tr>
+            <td>2 Pares (2P)</td>
+            <td id="probabilidad2P">0.10800</td>
+            <td>0.10800n</td>
+        </tr>
+        <tr>
+            <td>1 tercia y 1 par (TP)</td>
+            <td id="probabilidadTP">0.00900</td>
+            <td>0.00900n</td>
+        </tr>
+        <tr>
+            <td>Tercia (T)</td>
+            <td id="probabilidadT">0.07200</td>
+            <td>0.07200n</td>
+        </tr>
+        <tr>
+            <td>Póker (P)</td>
+            <td id="probabilidadP">0.00450</td>
+            <td>0.00450n</td>
+        </tr>
+        <tr>
+            <td>Quintilla (Q)</td>
+            <td id="probabilidadQ">0.00010</td>
+            <td>0.00010n</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong>
+    <script src="poker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #6b6b6b;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fcd450;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(15, 40px);
+    grid-template-rows: repeat(15, 40px);
+    width: 627px;
+   
+    gap: 2px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.square.current-player {
+    background-color: #ffcd94; /* Color de fondo para la ficha del jugador actual */
+}
+
+.square:hover {
+    background-color: #5c0c0cc5; /* Cambio de color de fondo al pasar el ratón sobre una casilla */
+}
+
+.data-container {
+    margin-bottom: 20px;
+}
+
+#random-numbers,
+#random-check {
+    margin-bottom: 10px;
+}
+
+#seed-input {
+    margin-bottom: 10px;
+}
+
+#winner-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #b67412;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #533308;
+}
+
+#numerosTable {
+    margin-top: 20px; 
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+#numerosTable th, #numerosTable td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: center; 
+}
+
+#numerosTable th {
+    background-color: #f2f2f2;
+}
+
+#numerosTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#numerosTable tbody tr:hover {
+    background-color: #ddd; 
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="K_S.css">
+  <title>Kolmogorov-Smirnov</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Kolmogorov-Smirnov</h1>
+    <form id="ksForm">
+      <label for="sampleSize">Tamaño de la muestra:</label>
+      <input type="number" id="sampleSize" min="1" value="100">
+    
+      <button type="button" onclick="generateKS()">Generar</button>
+    </form>
+
+    <div>
+      <canvas id="scatterChart" width="800" height="400"></canvas>
+    </div>
+
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Valor</th>
+          <th>Distribución Empírica Acumulativa</th>
+          <th>Diferencia Absoluta Máxima</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody"></tbody>
+    </table>
+    <br>
+    <br>
+    <strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong>
+  </div>
+
+  <script src="K_S.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú de Simulacion</title>
+<link rel="stylesheet" type="text/css" href="menuestilo.css">
+<style>
+  .team-list {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<div class="menu-panel">
+  <h1><div class="menu-title">Menú</div></h1>
+  <a href="cuadradosmedios.html" class="menu-button">Cuadrados Medios</a>
+  <a href="productosmedios.html" class="menu-button">Productos Medios</a>
+  <a href="multiplicaconstante.html" class="menu-button">Multiplicador Constante</a>
+  <a href="congruencialineal.html" class="menu-button">Congruencia Lineal</a>
+  <a href="congruencialmultiplicativo.html" class="menu-button">Congruencial Multiplicativo</a>
+  <a href="aditivo.html" class="menu-button">Congruencial Aditivo</a>
+  <a href="chi cuadrada.html" class="menu-button">Chi Cuadrada</a>
+  <a href="K_S.html" class="menu-button">K-S</a>
+  <a href="corridas.html" class="menu-button">Corridas arriba y abajo</a>
+  <a href="poker.html" class="menu-button">Poker</a>
+  <a href="gomoku.html" class="menu-button">Juego Gomoku</a>
+
+  <strong><a href="#" class="menu-button team-button">Integrantes del equipo</a></strong>
+  <ul class="team-list">
+    <li>Daniel Turrubiates Cervantes (2213520322)</li>
+    <li>Marco Antonio Soria Ortiz (2173510311)</li>
+    <li>Leonardo Ramos Espinoza (2173510264)</li>
+    <li>Sebastian Rodela Castillo (2173510277)</li>
+  </ul>
+</div>
+
+
+<script>
+  //sript para mostrar nombres de integrantes
+  document.addEventListener("DOMContentLoaded", function() {
+    const teamButton = document.querySelector(".team-button");
+    const teamList = document.querySelector(".team-list");
+
+    teamButton.addEventListener("click", function() {
+      if (teamList.style.display === "none") {
+        teamList.style.display = "block";
+      } else {
+        teamList.style.display = "none";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

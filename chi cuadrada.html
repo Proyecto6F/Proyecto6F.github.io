@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi-Cuadrada</title>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" href="chi.css">
+
+</head>
+<body>
+<div id="container">
+    <h1>Chi-Cuadrada</h1>
+    <button onclick="generarYProcedimiento()">Generar 500 números y Calcular Chi-Cuadrada</button>
+    <table id="numerosTable">
+        <thead>
+            <tr>
+                <th>Número Generado</th>
+            </tr>
+        </thead>
+        <tbody id="numerosBody">
+        </tbody>
+    </table>
+    <h2>Resultados del Procedimiento de la Chi-Cuadrada</h2>
+    <div id="grafica"></div>
+    <table id="resultadosTable">
+        <thead>
+            <tr>
+                <th>Intervalo</th>
+                <th>Frecuencia Observada</th>
+                <th>Frecuencia Esperada</th>
+                <th>Chi-Cuadrada</th>
+            </tr>
+        </thead>
+        <tbody id="resultadosBody">
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <strong><a href="menuprincipal.html" class="menu-button">Regresar a Inicio</a></strong>
+</div>
+
+<script src="chi .js"></script>
+</body>
+</html>
+
+
